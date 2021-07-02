@@ -25,7 +25,8 @@ jobs:
    
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2 
-        run: make lint
+      - run: npm install
+      - run: make lint
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
