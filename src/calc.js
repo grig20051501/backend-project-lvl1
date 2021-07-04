@@ -30,6 +30,7 @@ const game = (name) => {
     const numb2 = generateNumber(20);
     console.log(`Question : ${numb1} ${expression} ${numb2}`);
     const answer = readlineSync.question('Answer :');
+    // eslint-disable-next-line eqeqeq
     if (answer != correctAnswer(numb1, numb2, expression)) {
       console.log(`${answer} is wrong answer ;(. Correct answer was ${correctAnswer(numb1, numb2, expression)}`);
       flag = true;
