@@ -15,7 +15,7 @@ const gcd = (numb1, numb2) => {
   return first;
 };
 const game = (name) => {
-  let flag = false;
+  let isWrong = false;
   console.log('Find the greatest common divisor of given numbers');
   for (let i = 0; i < 3; i += 1) {
     const numb1 = generateNumber();
@@ -24,13 +24,13 @@ const game = (name) => {
     const answer = readlineSync.question('Answer : ');
     if (answer != gcd(numb1, numb2)) {
       console.log(`'${answer}' is wrong answer ;(. Correct answer was '${gcd(numb1, numb2)}'`);
-      flag = true;
+      isWrong = true;
       break;
     } else {
       console.log('Correct!');
     }
   }
-  if (flag) {
+  if (isWrong) {
     console.log(`Let's try again, ${name}!`);
   } else {
     console.log(`Congratulations, ${name}!`);

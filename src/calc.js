@@ -15,7 +15,7 @@ const correctAnswer = (numb1, numb2, expression) => {
 };
 const game = (name) => {
   console.log('What is the result of the expression?');
-  let flag = false;
+  let isWrong = false;
   for (let i = 0; i < 3; i += 1) {
     let expression;
     if (generateNumber(2) === 0) {
@@ -33,13 +33,13 @@ const game = (name) => {
     // eslint-disable-next-line eqeqeq
     if (answer != correctAnswer(numb1, numb2, expression)) {
       console.log(`${answer} is wrong answer ;(. Correct answer was ${correctAnswer(numb1, numb2, expression)}`);
-      flag = true;
+      isWrong = true;
       break;
     } else {
       console.log('Correct!');
     }
   }
-  if (flag) {
+  if (isWrong) {
     console.log(`Let's try again, ${name}!`);
   } else {
     console.log(`Congratulations, ${name}!`);
