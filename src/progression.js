@@ -19,7 +19,7 @@ const game = (name) => {
     const missedIndex = generateDifference();
     const missedNum = arr[missedIndex];
     arr[missedIndex] = '..';
-    console.log(`Question: ${arr}`);
+    console.log(`Question: ${arr[0]} ${arr[1]} ${arr[2]} ${arr[3]} ${arr[4]} ${arr[5]} ${arr[6]} ${arr[7]} ${arr[8]} ${arr[9]}`);
     const answer = readlineSync.question('Your answer : ');
     if (parseInt(answer, 10) !== missedNum) {
       console.log(`'${answer}' is wrong answer ;(. Correcr answer was ${missedNum}`);
