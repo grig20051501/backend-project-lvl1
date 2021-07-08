@@ -28,7 +28,7 @@ const game = (name) => {
     }
     const numb1 = generateNumber(20);
     const numb2 = generateNumber(20);
-    console.log(`Question : ${numb1} ${expression} ${numb2}`);
+    console.log(`Question :${numb1} ${expression} ${numb2}`);
     const answer = readlineSync.question('Answer :');
     // eslint-disable-next-line eqeqeq
     if (answer != correctAnswer(numb1, numb2, expression)) {

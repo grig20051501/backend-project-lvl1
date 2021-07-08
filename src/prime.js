@@ -14,7 +14,7 @@ const game = (name) => {
   console.log('Answer "yes" if the number is prime. Otherwise answer "no"');
   for (let i = 0; i < 3; i += 1) {
     const number = generateNumber();
-    console.log(`Question : ${number}`);
+    console.log(`Question :${number}`);
     const answer = readlineSync.question('Answer : ');
     if (isPrime(number) !== answer) {
       console.log(`'${answer}' is wrong answer ;(. Correct answer was '${isPrime(number)}'`);
