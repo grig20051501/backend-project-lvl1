@@ -11,7 +11,7 @@ const game = (name) => {
   console.log('Answer "yes" if the number is even, otherwise answer "no"');
   for (let i = 0; i < 3; i += 1) {
     const num = generate();
-    console.log(`Question :${num}`);
+    console.log(`Question: ${num}`);
     const answer = readlineSync.question('Your answer : ');
     if (answer !== correctAnswer(num)) {
       console.log(`'${answer}' is wrong answer ;(. Correct answer was '${correctAnswer(num)}'`);

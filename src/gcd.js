@@ -20,7 +20,7 @@ const game = (name) => {
   for (let i = 0; i < 3; i += 1) {
     const numb1 = generateNumber();
     const numb2 = generateNumber();
-    console.log(`Question :${numb1} ${numb2}`);
+    console.log(`Question: ${numb1} ${numb2}`);
     const answer = readlineSync.question('Answer : ');
     if (answer != gcd(numb1, numb2)) {
       console.log(`'${answer}' is wrong answer ;(. Correct answer was '${gcd(numb1, numb2)}'`);
