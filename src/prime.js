@@ -25,7 +25,7 @@ const game = (name) => {
     }
   }
   if (isWrong) {
-    console.log(`Let's try again, ${name}`);
+    console.log(`Let's try again, ${name}!`);
   } else {
     console.log(`Congratulations, ${name}!`);
   }
